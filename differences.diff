@@ -1,0 +1,43 @@
+test.rsandtest2.rs--- test.rs
+
++++ test2.rs
+
+@@ -1,9 +1,7 @@
+
+ use std::fs::File;
+
+ 
+
+ use flate2::Compression;
+
+-/* alasdlasdasdiasudfhasufhasuifhas
+
+-asdasjdiiduashiduashiduashidasd
+
+-asiduhasidhasid*/
+
++
+
+ use flate2::write::GZEncoder;
+
+ // laallaalalalalalalalalalalalalalalal
+
+ fn main() -> Result<(), std::io::Error>{
+
+@@ -12,7 +10,7 @@
+
+ 
+
+ let encoder = GZEncoder::new(gz, Compression::default());
+
+ 
+
+-let mut tar = tar::Builder::new(enc);
+
++let mut tar232 = tar::Builder::new(enc);
+
+ 
+
+ // add all files in the current directory to current_backup
+
+ 
