@@ -1,11 +1,12 @@
 use std::fs::File;
 
 use flate2::Compression;
-/* alasdlasdasdiasudfhasufhasuifhas
-asdasjdiiduashiduashiduashidasd
-asiduhasidhasid*/
+/* Multi
+    line
+        comment
+            will be removed*/
 use flate2::write::GZEncoder;
-// laallaalalalalalalalalalalalalalalal
+// Same comment
 fn main() -> Result<(), std::io::Error>{
 
 let gz = File::create("archive.tar.gz"); // heere is a comment

@@ -1,43 +1,26 @@
-test.rsandtest2.rs--- test.rs
-
+Additions: 3; Deletions: 5; Total Changes: 8
+--- test.rs
 +++ test2.rs
-
-@@ -1,9 +1,7 @@
-
+@@ -1,19 +1,17 @@
  use std::fs::File;
-
  
-
  use flate2::Compression;
-
--/* alasdlasdasdiasudfhasufhasuifhas
-
--asdasjdiiduashiduashiduashidasd
-
--asiduhasidhasid*/
-
+-/* Multi
+-    line
+-        comment
+-            will be removed*/
 +
-
  use flate2::write::GZEncoder;
-
- // laallaalalalalalalalalalalalalalalal
-
+ // Same comment
++
  fn main() -> Result<(), std::io::Error>{
-
-@@ -12,7 +10,7 @@
-
  
-
+ let gz = File::create("archive.tar.gz"); // heere is a comment
+ 
  let encoder = GZEncoder::new(gz, Compression::default());
-
  
-
 -let mut tar = tar::Builder::new(enc);
-
 +let mut tar232 = tar::Builder::new(enc);
-
  
-
  // add all files in the current directory to current_backup
-
  
