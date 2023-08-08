@@ -33,7 +33,7 @@ def compare_rust_files(file1_path, file2_path):
     for x in diff:
         retArr.append(x)
     
-    print(retArr)
+    
     # from pprint import pprint
     # pprint("".join(diff))
     return retArr
@@ -136,7 +136,7 @@ def create_file_path_dictionary(file_paths):
     for file_path in file_paths:
         # file_name = os.path.basename(file_path)
         idx1=find_nth_backslash(file_path,3)+1
-        print(str(file_path))
+        
         if str(file_path) in file_path_dict:
             file_path_dict[str(file_path)] = 2
         else:
@@ -150,9 +150,7 @@ def driver3():
     new,old=pathList();
     total=new.copy()
     total.extend(old)
-    print(new)
     dc=create_file_path_dictionary(total)
-    print(dc)
     # print(new)
     # print(old)
     import datetime
@@ -161,9 +159,10 @@ def driver3():
     os.mkdir(destPath)
     for key in dc:
         if dc[key]>1:
-            print(key)
+          
             compareAndWrite(os.path.join("repo",key),os.path.join("prevCommit",key),key,destPath);
 
-        
+    print("------------Done-------------")
+    print("Check the folder: "+ destPath)
         
 driver3()

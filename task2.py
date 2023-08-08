@@ -7,6 +7,8 @@
 # first file is treated as the previous version and the second file is treated
 # as the newer version. The 3 values are printed on the terminal and the details
 # written on in the differences.diff file.
+# The user can give two files through the command line e.g. python task2.py -f file1.rs file2.rs
+# If two files aren't specified then the defaults are used
 
 #Nazmus Sakib Ahmed
 #BSSE1108 
